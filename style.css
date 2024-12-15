@@ -7,7 +7,15 @@ body {
     text-align: center;
     color: #333;
 }
-
+.titulo {
+    font-size: 3em;
+    color: #ff595e;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 h2 {
     text-transform: capitalize;
     font-size: 1.8em;
