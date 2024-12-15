@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8f9fa, #dbe2ef);
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Input y botón */
+#pokemonInput {
+    width: 60%;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1em;
+    outline: none;
+}
+
+img:hover{
+    transition: all 0.5s ease-in-out;
+    scale: 1.2;
+}
+
+#pokemonInput:focus {
+    border-color: #ff595e;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff595e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3838;
+}
+
+/* Contenedor de Pokémon */
+#mostrar {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#mostrar img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    animation: fadeIn 0.8s;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilos para el error */
+#mostrar p {
+    color: #d9534f;
+    font-weight: bold;
+}
